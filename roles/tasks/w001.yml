@@ -1,8 +1,7 @@
-# Rule W001 - Use full FQCN
 ---
 - name: Create a ec2 cloud instance
   register: x
-  ec2_instance:
+  amazon.aws.ec2_instance:
     state: running
     name: my_ec2
     region: us-east-1
